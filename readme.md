@@ -35,7 +35,7 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan aplikasi secara lokal.
 
 1.  **Clone repositori:**
     ```bash
-    git clone [https://github.com/your-username/ai-cv-evaluator.git](https://github.com/your-username/ai-cv-evaluator.git) # Ganti dengan username dan nama repo Anda
+    git clone https://github.com/raratdit/ai-cv-evaluator.git
     cd ai-cv-evaluator
     ```
 
@@ -72,7 +72,6 @@ PyPDF2
 
 1.  **Dapatkan OpenRouter API Key (Opsional tapi Direkomendasikan):**
     * Kunjungi [https://openrouter.ai](https://openrouter.ai) dan daftar.
-    * Top-up saldo Anda (minimal $1-$5 untuk memulai).
     * Dapatkan API Key Anda dari halaman akun.
 
 2.  **Jalankan aplikasi Streamlit:**
