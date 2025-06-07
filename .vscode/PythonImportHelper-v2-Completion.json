@@ -1,0 +1,109 @@
+[
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "OpenRouterClient",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class OpenRouterClient:\n    def __init__(self, api_key, model=\"anthropic/claude-3.5-sonnet\"):\n        self.api_key = api_key\n        self.model = model\n        self.base_url = \"https://openrouter.ai/api/v1/chat/completions\"\n        self.headers = {\n            \"Authorization\": f\"Bearer {api_key}\",\n            \"HTTP-Referer\": \"http://localhost:8501\",\n            \"X-Title\": \"CV Evaluator App\",\n            \"Content-Type\": \"application/json\"",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "CVEvaluator",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class CVEvaluator:\n    def __init__(self, openrouter_client=None):\n        self.openrouter_client = openrouter_client\n        # Database role dan skill yang terkait (sebagai backup)\n        self.role_skills = {\n            \"Data Analyst\": [\n                \"python\", \"sql\", \"excel\", \"tableau\", \"power bi\", \"pandas\", \"numpy\", \n                \"statistics\", \"data visualization\", \"analytics\", \"reporting\", \"dashboard\"\n            ],\n            \"Data Scientist\": [",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def main():\n    st.title(\"🤖 AI CV Evaluator with OpenRouter\")\n    st.subheader(\"Analisis CV Otomatis dengan AI Canggih\")\n    # Sidebar untuk API Key dan Model Selection\n    with st.sidebar:\n        st.header(\"🔑 OpenRouter API Setup\")\n        # Input API Key\n        api_key = st.text_input(\n            \"OpenRouter API Key\",\n            type=\"password\",",
+        "detail": "app",
+        "documentation": {}
+    }
+]
