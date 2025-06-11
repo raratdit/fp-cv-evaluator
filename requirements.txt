@@ -1,0 +1,18 @@
+# Core Dependencies
+streamlit>=1.28.0
+pandas>=1.5.0
+numpy>=1.24.0
+requests>=2.28.0
+
+# PDF Processing Libraries (install one or more)
+PyMuPDF>=1.23.0          # Recommended - fast and reliable
+pdfplumber>=0.9.0        # Alternative option - good for complex layouts
+PyPDF2>=3.0.0            # Fallback option - basic PDF reading
+
+# Optional: If you want all PDF libraries for maximum compatibility
+# Uncomment the lines above to install all three
+
+# Development Dependencies (optional)
+# streamlit-option-menu>=0.3.6  # For better UI navigation
+# plotly>=5.15.0                # For advanced charts
+# altair>=5.0.0                 # For additional visualizations
